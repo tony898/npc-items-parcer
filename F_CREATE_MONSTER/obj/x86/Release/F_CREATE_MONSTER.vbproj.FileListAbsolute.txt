@@ -1,0 +1,11 @@
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\bin\Release\F_CREATE_MONSTER.exe
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\bin\Release\F_CREATE_MONSTER.pdb
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\bin\Release\F_CREATE_MONSTER.xml
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.Resources.resources
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.vbproj.GenerateResource.Cache
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.exe
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.xml
+C:\Users\m17x r3\Desktop\github\npc-items-parcer remove\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.pdb
+C:\Users\m17x r3\Desktop\github\npc-items-parcer\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.exe
+C:\Users\m17x r3\Desktop\github\npc-items-parcer\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.xml
+C:\Users\m17x r3\Desktop\github\npc-items-parcer\F_CREATE_MONSTER\obj\x86\Release\F_CREATE_MONSTER.pdb

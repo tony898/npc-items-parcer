@@ -1,0 +1,76 @@
+heres code in c++ this to needs altering
+
+
+
+
+		if(!item) return true;
+
+		SkipValue(8);
+
+		size=0;
+
+		for(int i=10;i<30 && !size;i++)
+		{
+			for(int z=0;z<2 && !size;z++)
+			{
+				char srh[6];
+				_snprintf(srh, 6, "%02X%04X",z,i);
+				stringstream ss;
+				for(int d=0;d<6;d++)
+					ss << srh[d];
+
+				size = GetSize(ss.str());
+			}
+		}
+
+		if(!size)		
+			return true;
+
+		size-=4;
+
+		SkipValue(size);
+
+		int ItemCount = GetInt(1);
+
+		if(!ItemCount) 
+			return true;
+
+		// items output screen
+		cout << "<Items " << ItemCount << ">";
+
+		for(int i=0;i<ItemCount;i++)
+		{
+			int effectcount = GetInt(1);
+
+			int slot = GetInt(2);
+			int modelid = GetInt(2);
+
+			if(!slot || !modelid)
+				continue;
+
+			if(slot==10 || slot==11)
+			{
+				QueryResult * Quer = WorldDatabase.Query("SELECT type FROM items WHERE modelid=%u LIMIT 0,1",modelid);
+				if(Quer)
+				{
+					uint32 type = Quer->Fetch()[0].GetUInt32();
+					
+					if(type == 15 || type == 9 || type ==7 )
+						WorldDatabase.WaitExecute("UPDATE creature_protos SET Ranged='1' WHERE entry=%u",m_entry);
+				}
+				delete Quer;
+			}
+
+			int m_effect = 0;
+
+			for(int z=0;z<effectcount;z++)
+				m_effect = GetInt(4);
+
+			WorldDatabase.WaitExecute("INSERT INTO creature_items (entry,slot_item,model_item,effect) VALUES ('%u','%u','%u','%u')",m_entry,slot,modelid,m_effect);
+
+
+
+		}
+
+		return true;
+}
